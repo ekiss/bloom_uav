@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>BloomUav</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Bloom Uav" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Bloom Uav" %>">
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%# application layout styled for Bootstrap 2.3 %>
+	
+    <header>
+      
+    </header>
+	<div id="opening_body">
+    <main role="main">
+      <div class="container" >
+		   <%= render 'layouts/navigation' %>
+        <div class="content">
+           <div class="row">
+            <div class="span12">
+              <%= render 'layouts/messages' %>
+			   <%= yield %>		
+            </div>
+          </div>
+		  <hr>
+		  <div class ="row">
+			  <div class="span9 offset3" id= "thumbs">
+		  <%= render 'layouts/subcontent' %>
+		  
+	  </div>
+  </div>	
 
-<%= yield %>
 
-</body>
+        </div> 
+      </div>  
+    </main>
+	<hr>
+	<%= render 'layouts/footer' %>   
+
+	</div>
+  </body>
 </html>

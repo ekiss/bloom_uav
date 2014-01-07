@@ -1,4 +1,9 @@
 BloomUav::Application.routes.draw do
+  get "bloom_hydro/home"
+  resources :bloom_developments
+
+  resources :blooms
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

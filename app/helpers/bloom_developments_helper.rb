@@ -1,0 +1,2 @@
+module BloomDevelopmentsHelper
+end
