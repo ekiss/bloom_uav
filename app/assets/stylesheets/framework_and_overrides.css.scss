@@ -1,0 +1,64 @@
+// import the CSS framework
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+html {
+  overflow-y: scroll;
+}
+
+#opening_body{
+	 background:url(Farm1.jpg);
+	 	height:600px;
+		width:100%;
+}
+
+#nav_main{
+	margin-bottom:0px;
+}
+
+.content{
+	width:100%;
+}
+
+.center {
+  text-align: left;
+  position:relative;
+  margin-top:50px;
+  margin-bottom:275px;
+  h1 {
+	  margin-bottom:10px;
+	  color:gray;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:gray;
+}
+
+/* Header */
+
+#box{
+	background:url(copter1.JPG);
+	height:160px;
+	width:160px;
+	h3 {
+		color:white;
+	}
+}
+
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+	  color: white;
+	  text-decoration: none;
+  }
+}

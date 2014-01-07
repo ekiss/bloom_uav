@@ -1,0 +1,23 @@
+<%# navigation styled for Bootstrap 2.3 %>
+<div class="navbar" id="nav_main">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+	  
+      <div class="nav-collapse collapse">
+          <div class="navbar navbar-inverse navbar-static-top">
+            <nav class="navbar-inner">
+              <ul class="nav">
+                <li><%= link_to 'Bloom', '#', id: "logo" %><li>
+              </ul>
+			  <%= render 'layouts/navigation_links' %>
+            </nav>
+          </div>
+
+      </div>
+    </div>
+</div>
+

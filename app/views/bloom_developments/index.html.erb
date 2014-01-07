@@ -1,0 +1,25 @@
+<h1>Listing bloom_developments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bloom_developments.each do |bloom_development| %>
+      <tr>
+        <td><%= link_to 'Show', bloom_development %></td>
+        <td><%= link_to 'Edit', edit_bloom_development_path(bloom_development) %></td>
+        <td><%= link_to 'Destroy', bloom_development, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bloom development', new_bloom_development_path %>
