@@ -10,32 +10,10 @@
   </head>
   <body>
     <%# application layout styled for Bootstrap 2.3 %>
-	
-    <header>
-      
-    </header>
-	<div id="opening_body">
+	 <%= render 'layouts/navigation' %>
     <main role="main">
-      <div class="container" >
-		   <%= render 'layouts/navigation' %>
-        <div class="content">
-           <div class="row">
-            <div class="span12">
               <%= render 'layouts/messages' %>
-			   <%= yield %>		
-            </div>
-          </div>
-		  <hr>
-		  <div class ="row">
-			  <div class="span9 offset3" id= "thumbs">
-		  <%= render 'layouts/subcontent' %>
-		  
-	  </div>
-  </div>	
-
-
-        </div> 
-      </div>  
+			   <%= yield %>		 
     </main>
 	<hr>
 	<%= render 'layouts/footer' %>   

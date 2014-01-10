@@ -1,19 +1,80 @@
 // import the CSS framework
 @import "bootstrap";
-@import "bootstrap-responsive";
 
 html {
   overflow-y: scroll;
 }
-
-#opening_body{
-	 background:url(Farm1.jpg);
-	 	height:600px;
-		width:100%;
+/* Navbar Edits */
+.navbar {
+  margin-bottom: -80px;
+}
+.navbar .nav > li > a {
+  font-weight: normal;
+  font-size: 1.2em;
+  font-size: 16px;
+}
+.navbar .nav > li > a:hover {
+  color: black;
+}
+.navbar-default {
+background: rgba(255, 255, 255, 0.7);
+}
+.navbar .navbar-brand { 
+  padding-top: 14px;
+  padding-bottom: 14px; 
+}
+.navbar-default {
+  border-radius: 0;
 }
 
-#nav_main{
-	margin-bottom:0px;
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white
+}
+.navbar-default .navbar-toggle {
+	border-color: white;
+}
+.navbar-toggle {
+  margin-top: 18px;
+}
+
+@media (max-width: 979px) {
+  .navbar .nav > li > a, 
+  .navbar .nav > li.dropdown > a, 
+  .navbar .nav > li > a:hover, 
+  .navbar .nav > li.dropdown > a:hover {
+    padding:  20px !important;
+  }
+  .navbar .nav {
+    float: right !important;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .nav > li > a, 
+  .navbar .nav > li.dropdown > a, 
+  .navbar .nav > li > a:hover, 
+  .navbar .nav > li.dropdown > a:hover {
+    padding:  5px 20px !important ;
+  }
+  .navbar .nav > li > a:hover {
+    color: #16a085;
+  }
+  .navbar-collapse  {
+    background-color: #fefefe;
+  }
+}
+
+/* Content Area */
+
+.background-img {
+  width: 100%;
+  margin-bottom: 10px;
+  background-size: 100%;
+  background-position: center; 
+}
+
+.farm{
+	 background:url(Farm1.jpg);
+	 min-height:600px;
 }
 
 .content{
@@ -21,18 +82,32 @@ html {
 }
 
 .center {
-  text-align: left;
-  position:relative;
-  margin-top:50px;
-  margin-bottom:275px;
-  h1 {
-	  margin-bottom:10px;
+	position: relative;
+	top: 200px;
+  margin-bottom:0px;
+  h2, p {
 	  color:gray;
   }
+  h2 {
+	  margin-top:0;
+  }
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:gray;
+
+}
+
+.separator {
+  border-left: 1px solid whitesmoke ;
+	margin: 25px 0;
+	float: left;
+	height: 80px;
+}
+
+.feature{
+    text-align: center;
+    padding: 15px 5px;
 }
 
 /* Header */
@@ -47,15 +122,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 #logo {
   float: left;
   margin-right: 10px;
+  margin-left: 20px;
   font-size: 1.7em;
-  color: white;
+  color: gray;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: px;
   padding-top: 9px;
-  font-weight: bold;
   line-height: 1;
   &:hover {
 	  color: white;
